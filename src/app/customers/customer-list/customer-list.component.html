@@ -1,0 +1,8 @@
+<ul class="items">
+  <li *ngFor="let customer of customers">
+    <a [routerLink]="['/customers', customer.id]">
+      <span>{{ customer.id }} </span>{{ customer.name.first + customer.name.last}}
+    </a>
+  </li>
+
+</ul>
